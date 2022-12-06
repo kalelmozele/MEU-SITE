@@ -1,0 +1,531 @@
+*  {
+   user-select: none;
+   margin: 0%;
+   padding: 0%;
+   text-decoration: none;
+   color: white;
+}
+
+.MainPage {
+   width: 100%;
+   height: 100%;
+   background-color: #141414;
+   font-family: Roboto;
+}
+
+.listenLinks {
+   text-align: center;
+   margin-top: 1.9%;
+   position: absolute;
+   right: 75%;
+   transform: translateX(50.0%)translateY(-122%);
+   text-align: center;
+   letter-spacing: 1px;
+
+   opacity: 100%;
+   font-family: 'Roboto Mono', monospace; font-size: 125%;
+   opacity: 0%;
+   padding: 2.3%;
+   border-radius: 1.5%;
+   box-shadow: 0 2px 5px 0 rgba(0 , 0 , 0 , .1);
+
+   outline-color: rgba(255, 255, 255,0.15);
+   outline-width: 1px;
+   outline-style: outset;
+
+   background-color:rgba(255, 255, 255, 0.01);
+   backdrop-filter: blur(7px);
+
+   transition:ease 0.12s;
+   transition: background-color rgba(255, 106, 34, 0.5) 0.7s;
+}
+
+.talkLinks {
+   text-align: center;
+   position: absolute;
+   left: 75%;
+   transform: translateX(-50.0%)translateY(-122%);
+   letter-spacing: 1px;
+   margin-top: 1.9%;
+
+   color: #0e0e0e;
+   opacity: 100%;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 125%;
+   opacity: 0%;
+   padding: 2.3%;
+   border-radius: 1.5%;
+   box-shadow: 0 2px 5px 0 rgba(0 , 0 , 0 , .1);
+   outline-color: rgba(255, 255, 255,0.15);
+   outline-width: 1px;
+   outline-style: outset;
+   
+   background-color:rgba(255, 255, 255, 0.01);
+   backdrop-filter: blur(7px);
+
+   transition:ease 0.12s;
+}
+
+.talkT {
+   text-align: center;
+   padding-top: 1.9%;
+   padding-bottom: 4%;
+   right: 25%;
+   transform: translateX(50%);
+   position: absolute;
+   font-family: Arial;
+   font-size: 175%;
+   letter-spacing: 6px;
+   filter: blur(0px);
+   
+   transition:ease 0.12s;
+   text-shadow: 1px 2px 15px rgb(10, 10, 10), 1px 2px 20px rgb(30, 30, 30);;
+}
+
+.listenT {
+   text-align: center;
+   padding: 1.9%;
+   left: 25%;
+   transform: translateX(-50%);
+   position: absolute;
+   font-family: Arial;
+   font-size: 175%;
+   letter-spacing: 6px;
+   filter: blur(0px);
+   transition: ease 0.12s;
+   text-shadow: 1px 2px 12px rgb(10, 10, 10), 1px 2px 20px rgb(30, 30, 30);;
+}
+
+.listen {
+   position: absolute;
+   width: 100%;
+   height: 0%;
+}
+
+.talk {
+   position: absolute;
+   width: 100%;
+   height: 0%;
+}
+
+.banner img {  
+	width: 100%;
+	height: 100%;
+	filter: brightness(1.1) blur(0.5px);
+} 
+
+/*==============================================================================================================*/
+/*==============================================================================================================*/
+
+.listen:hover .listenLinks {
+	opacity: 100%;
+	display: inline-block;	
+}
+
+.listenT:hover .listenT {filter:blur(2.5px);}
+
+.listenT:hover {filter:blur(2.5px);}
+
+
+.talk:hover .talkLinks {
+	opacity: 100%;
+	display: inline-block;
+}
+
+.talk:hover .talkT {filter:blur(2.5px);}
+
+.listen:hover .listenT {filter:blur(2.0px);}
+
+
+.placeH-listen1 {
+	letter-spacing: 2px;
+}
+
+.placeH-listen1 p {
+   margin: 0.75em 0px;
+}
+
+.placeH-listen1:hover {
+   background-color: rgba(130, 40, 65, 0.5); 
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4%;
+   transition: ease-in-out 0.08s;
+   letter-spacing: 4px;
+   transition: ease 0.5s;
+}
+
+.placeH-listen2 {
+	letter-spacing: 2px;
+}
+
+.placeH-listen2 p {
+   margin: 0.75em 0px;
+}
+
+.placeH-listen2:hover {
+   background-color: rgba(115, 40, 80, 0.5); 
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4%;
+   transition: ease-in-out 0.08s;
+   letter-spacing: 4px;
+   transition: ease 0.5s;
+}
+
+.placeH-talk1 {
+	letter-spacing: 2px;
+}
+
+.placeH-talk1 p {
+   margin: 0.75em 0px;
+}
+
+.placeH-talk1:hover {
+   background-color: rgba(100, 40, 95, 0.5); 
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4%;
+   transition: ease-in-out 0.08s;
+   letter-spacing: 4px;
+   transition: ease 0.5s;
+}
+
+.placeH-talk1:hover:before {
+  content: "Placeholder@gmail.com";
+}
+
+.placeH-talk2 {
+	letter-spacing: 2px;
+}
+
+.placeH-talk2 p {	
+   margin: 0.75em 0px;
+}
+
+.placeH-talk2:hover { 
+   background-color: rgba(85, 40, 110, 0.5); 
+   transition: background-color 0.2s ease-in-out;
+   border-radius: 4%;
+   transition: ease-in-out 0.08s;
+   letter-spacing: 4px;
+   transition: ease 0.5s;
+}
+
+.placeH-talk2:hover:before {
+  content: "PlaceHolder#0000";
+}
+
+/*==============================================================================================================*/
+/*==============================================================================================================*/
+
+.IMGspacer {
+	width: 100%;
+}
+
+.title {
+	text-align: center;
+   padding-top: 2%;
+   padding-bottom: 4%;
+   left: 50%;
+   transform: translateX(-50%)translateY(-113%);
+   position: absolute;
+   font-family: Roboto;
+   font-size: 175%;
+   letter-spacing: 6px;
+   text-shadow: 1px 2px 15px rgb(10, 10, 10), 1px 2px 20px rgb(30, 30, 30);;
+}
+
+.title, .title2 {
+   font-family: Arial;
+   text-align: center;
+   font-size: calc(5em - 14px);
+   letter-spacing: 10px;
+   padding: 4px 0 26px 0;
+}
+
+.title2 {
+	position: absolute;
+	top:50%; 
+   left:50%; 
+   transform:translate(-45%, calc(-50% + 132px));
+	letter-spacing: 96px;
+	text-shadow: 0 0 25px rgba(80, 80, 80), 0 0 75px rgba(175, 175, 175);
+	margin-bottom: 5em;
+}	
+
+.title2Box{
+	position: relative;
+	margin: -16px 40%;
+   z-index: 1;
+}
+
+.title-BGBox h2 {
+	letter-spacing: 60px;
+	margin-left: 0px;
+	transform:translate(-45%, calc(-137% + 132px));
+	transition: all 0.7s cubic-bezier(0.3, 0.75, 0.1, 1);
+}
+
+.title-BGBox:hover h2 {
+	margin-left: -16px;
+	letter-spacing: 24px;
+	transform: translate(-45%, 60%);
+}
+
+.intro {
+	background: #141414;
+	background-image: url("bangAsset.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-blend-mode: hard-light;
+	filter: saturate(110%);
+	padding: 20px 0;
+	text-align: left;
+}
+
+.intro p, h3, h4 {
+	margin-bottom: 2rem;
+	line-height: calc(1em + 4px);
+}
+
+.intro p {
+	line-height: calc(1em + 7px);
+}
+
+.intro div {
+	font-family: Roboto;
+	text-align: left;
+	font-size: 24px;
+	margin: 0 520px 0 210px;
+}
+
+.intro div h3 {
+	font-family: Roboto;
+	text-align: left;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 0.5em 0;
+	color: #e4d6f5;
+	letter-spacing: 0.5px;
+	background: linear-gradient(to right,#e5deed00	, 40%, #00000000 );
+}
+
+.intro div h4 {
+	font-family: Roboto;
+	text-align: left;
+	font-size: 38px;
+	font-weight: 700;
+	color: #e4d6f5;
+	letter-spacing: 0.5px;
+}
+
+.spacer {
+	margin: 0 0 2em;
+}
+
+.Lspacer {
+	margin: 3em 0 0;
+}
+
+.secSpacer {
+	padding: 0 0 1px;
+	margin: 0 0 4em;
+	background: linear-gradient(to left, #FFFFFF, 40%,#ffffff14);
+}
+
+.secSpacerVar {
+	padding: 0 0 1px;
+	margin: 0 0 4em;
+	background: linear-gradient(to right, #FFFFFF, 40%,#ffffff14);
+}
+
+hr {
+   position: absolute;
+   right: 8.2%;
+   bottom: 22%;
+   padding: 300px 0 0 640px;
+   
+   border-bottom: white solid 1px;
+   border-right: white solid 1px;
+   border-top: 0;
+   border-left: 0;
+   
+   border-radius: 30px;
+   backdrop-filter: saturate(550%) contrast(94%) ;
+   background: linear-gradient(112deg, #00000036 15%, 63%, #FFFFFF16);
+}
+
+/*==============================================================================================================*/
+/*==============================================================================================================*/
+
+.BG {
+	background-color: #101010;
+	background-image: url("BG2.jpg");
+	background-size: cover;
+	background-position: center;
+
+	padding: 7.5% 0 0 0;
+	font-family: Roboto;
+	
+	filter: blur(52px) saturate(150%);
+	opacity: 70%;
+	transition-property: filter:blur(0px); margin-top;
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
+	z-index: 0;
+}
+
+.BG:hover {
+	opacity: 95%;
+	filter: blur(0px) saturate(111%);
+}
+
+.releases {
+	box-sizing: border-box;
+	margin: 0 auto;
+	justify-content: center;
+     display: flex;
+}
+
+.releases li {
+	display: inline-block;
+	text-align: center;
+   width: 282px;
+   margin: 48px;
+	box-sizing: border-box;
+}
+
+.releases li div {
+	margin-top: 4px;
+	backdrop-filter: hue-rotate(11deg) blur(8px) brightness(65%) saturate(250%);
+	border: rgba(0, 0, 0, 0) 1px solid;
+	border-radius: 6px;
+	background: linear-gradient(#FFFFFF10 15%, 65%,#20202060);
+}
+
+.releases img {
+	width: 280px;
+	height: 280px;
+}
+
+.releases h4 {
+	text-transform: uppercase;
+	font-family: Arial;
+	font-size: 175%;
+	margin: 0.25em 0;
+	letter-spacing: 10px;
+	line-height: 1.25em;
+	text-shadow: 1px 1px 12px rgb(35, 35, 35);
+}
+
+.eye {
+   font-style: italic;
+   padding: 0 0 0.5em;
+   font-family: 'Roboto Mono', monospace;
+   letter-spacing: 5px;
+}
+
+.rate p {
+	font-family: Arial;
+	font-size: 175%;
+	margin: 0.5em 0;
+	letter-spacing: 10px;
+	line-height: 1em;
+	text-shadow: 1px 1px 12px rgb(35, 35, 35);
+}
+
+.rating {
+	text-align:center;
+	position: relative;
+}
+
+.rate {
+   width: auto;
+   text-align: center;
+   display: inline-block;
+   background: radial-gradient(ellipse 70% 63%, #00000080, #00000000 76%);
+  	padding: 0 8em 2em 8em;
+} 
+
+input {
+  display: none;
+}
+
+label {
+   cursor: pointer;
+  	text-transform: uppercase;
+  	display: inline-block;
+  	position: relative;
+  	margin: 4px 8px;
+	
+  	width: 36px;
+  	height: 10px;
+  	background: #ffffff;
+  	transition: all 0.15s ease;
+  	text-shadow: 1px 1px 12px rgb(35, 35, 35);
+}
+
+.send { 
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 16px;
+	display: block;
+   position: relative;
+   transform: translate(-50%, -50%);
+   
+   left: 50%;
+   right: 50%;
+   margin: 24px 0;
+   width: 114px;
+   height: 22px;
+   
+   background: #ffffff;
+   border: white solid 1px;
+   color: #000000;
+   transition: all 0.15s ease;
+}
+
+.rate label:before {
+  	content: '';
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	top:0;
+  	left: 0;
+  	transition: all 0.15s ease;
+}
+
+.rate input:checked ~ label, .rate label:hover ~ label, .rate label:hover {
+  background: #95fb9f;
+}
+
+.footer {
+	position: relative;
+	justify-content: center;
+	display: flex;
+	backdrop-filter: hue-rotate(14deg) blur(10px) brightness(65%) saturate(65%);
+	border-top: white solid 1px;
+}	
+
+.footer div {
+	padding: 0px 560px 24px 560px;
+   background: linear-gradient(to right, #00000000, #141414 23%, #141414 77%, #00000000);
+}
+
+footer img {
+	width: 80%;
+	height: 80%;
+	opacity: 65%;
+	transition: opacity 0.15s ease;
+}
+
+footer img:hover {
+	opacity: 100%;
+	cursor: pointer;
+}
+
+footer p {
+	color: #a4a4a4;
+	position: absolute;
+	text-align: center;
+	transform: translateX(-30px);
+}
